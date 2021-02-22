@@ -98,7 +98,8 @@ will act as an abstraction barrier to prevent the extra functions from
 leaking out of the module.)
 ......................................................................*)
 
-module MakeStack (Element: SERIALIZE) : (STACK with type element = Element.t) =
+module MakeStack (Element: SERIALIZE)
+       : (STACK with type element = Element.t) =
   struct
     exception Empty
 
