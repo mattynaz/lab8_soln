@@ -65,6 +65,7 @@ module type ORDERED_TYPE =
     val compare : t -> t -> int
   end ;;
 
+
 (*......................................................................
 Exercise 1A: Complete the following functor for making interval modules.
 
